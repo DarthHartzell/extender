@@ -53,9 +53,9 @@ iec.addIe('BSS_Avg_Access_Delay', one)
 iec.addIe('Antenna', one)
 iec.addIe('BSS_Avail_Admission_Cap', '\x00\x00\x00')
 iec.addIe('BSS_AC_Access_Delay_or_WAPI', four)
-# vs = Dot11Elt(ID='vendor', info=msoft)
+
 iec.addIe('Meas_Pilot_Trans', ba.unhexlify('01'))
-# iec.addIe('Meas_Pilot_Trans', ba.unhexlify('000000')+raw(vs))
+
 iec.addIe('Mult_BSSID', one)
 iec.addIe('RMEnabledCap', five)
 iec.addIe('Mobility_Domain', three)

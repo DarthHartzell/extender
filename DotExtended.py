@@ -8,21 +8,22 @@ from scapy.layers.dot11 import Dot11Elt
 from scapy.utils import issubtype
 
 Dot11Elt_fields = {
-0:"SSID", # max ssid == 32
-1:"Rates", # len >= 1
-2: "FHset", 
-3:"DSset", # len == 1
-4:"CFset", # len == 6
-5:"TIM", # len >= 4
-6:"IBSSset", # len == 2
-16:"challenge", # len > 0
-42:"ERPinfo", # len == 1
-46:"QoS Capability", # len == 1
-47:"ERPinfo", # len == 1
-48:"RSNinfo", # len >= 2, but 18 really...
-50:"ESRates", # len > 0
-221:"vendor", # len > 3
-68:"reserved" }
+    0:"SSID", # max ssid == 32
+    1:"Rates", # len >= 1
+    2: "FHset", 
+    3:"DSset", # len == 1
+    4:"CFset", # len == 6
+    5:"TIM", # len >= 4
+    6:"IBSSset", # len == 2
+    16:"challenge", # len > 0
+    42:"ERPinfo", # len == 1
+    46:"QoS Capability", # len == 1
+    47:"ERPinfo", # len == 1
+    48:"RSNinfo", # len >= 2, but 18 really...
+    50:"ESRates", # len > 0
+    221:"vendor", # len > 3
+    68:"reserved"
+}
 
 Dot11_extended_ids = {
     7:"Country", # len >= 6 ## (sub-element to 196)

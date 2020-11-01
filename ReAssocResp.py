@@ -27,7 +27,7 @@ iec.addIe('RMEnabledCap', five)
 iec.addIe('RSNinfo', unhexlify("0100000fac020200000fac04000fac020100000fac020000"))
 iec.addIe('Mobility_Domain', three)
 iec.addIe('FTE', one*82)
-# iec.addIe('RIC', four)
+
 iec.addIe('RIC', unhexlify('00000000'))
 
 iec.addIe('DSE_registered_loc', one)
