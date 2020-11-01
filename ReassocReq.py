@@ -32,7 +32,7 @@ iec.addIe('QoS Capability', one)
 iec.addIe('RMEnabledCap', five)
 iec.addIe('Mobility_Domain', three)
 iec.addIe('FTE', one*82)
-# iec.addIe('RIC', four)
+
 iec.addIe('RIC', unhexlify('00000000'))
 iec.addIe('SupportedOperatingClasses', three)
 iec.addIe('HT_Caps', one*26)

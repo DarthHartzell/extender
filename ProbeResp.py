@@ -12,9 +12,9 @@ esrates 	= '\x30\x48\x60\x6c'
 tim = '\x00\x01\x00\x00'
 addr1 = 'aa:bb:cc:dd:ee:ff'
 addr2 = '11:22:33:44:55'
-# addr3 = '66:77:88:99:01'
+
 ssid = 'DarkWeb'
-dsset = '\x07' #ba.a2b_hex('{:02x}'.format(7))
+dsset = '\x07'
 
 broadcom = '\x00\x10\x18\x01\x01\x00'
 one = '\x01'

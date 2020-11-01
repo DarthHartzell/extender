@@ -24,9 +24,9 @@ iec.addIe('RSNinfo', unhexlify("0100000fac020200000fac04000fac020100000fac020000
 iec.addIe('Mobility_Domain', three)
 iec.addIe('FTE', one*82)
 iec.addIe('TimeoutInterval', five)
-# rl = Dot11Extended(ID='RIC_Descriptor', info='\x01')
+
 iec.addIe('RIC', unhexlify('00000000'))
-# iec.addIe('RIC_Descriptor', '\x01\x01\x01')
+
 iec.addIe('Multiband', one*22)
 iec.addIe('Neighbor_Rep', one*13)
 iec.addIe('vendor', broadcom)

@@ -13,7 +13,7 @@ addr1 = 'aa:bb:cc:dd:ee:ff'
 addr2 = '11:22:33:44:55'
 
 ssid = 'DarkWeb'
-dsset = '\x07' #ba.a2b_hex('{:02x}'.format(7))
+dsset = '\x07'
 broadcom = '\x00\x10\x18\x01\x01\x00'
 one = '\x01'
 three = '\x01\x02\x03'
@@ -30,8 +30,7 @@ iec.addIe('HT_Caps', one*26)
 iec.addIe('BSS_Coexist', one)
 iec.addIe('Ext_Caps', one*10)
 s1 = Dot11Elt(ID='SSID', info='a')
-# s2 = Dot11Elt(ID='SSID', info='DarkSide')
-# iec.addIe('SSID_List', raw(s1)+raw(s2))
+
 iec.addIe('SSID_List', raw(s1))
 iec.addIe('Channel_Usage', one)
 iec.addIe('Interworking', one*9)
