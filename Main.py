@@ -164,8 +164,7 @@ if __name__ == '__main__':
     parser.add_argument('IEtag', help='the IE to put in the packet, should be an int', type=int)
     parser.add_argument('--value', help='the value field for the IE, if blank, default value used')
     args = parser.parse_args()
-    # print ( args.type )
-    # print ( args.IEtag )
+
     if args.type not in types:
         print('invalid type, valid types are:')
         for t in types:
